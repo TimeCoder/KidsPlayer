@@ -1,4 +1,4 @@
-﻿namespace KidsVideo.Views
+﻿namespace KidsPlayer.Views
 {
     public partial class NavigationPanelView
     {

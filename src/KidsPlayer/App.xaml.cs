@@ -1,4 +1,4 @@
-﻿namespace KidsVideo
+﻿namespace KidsPlayer
 {
     using System.Windows;
 

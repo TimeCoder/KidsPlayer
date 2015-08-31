@@ -3,7 +3,7 @@ Catel project template readme
 
 Congratulations with creating a new Catel project:
 
-KidsVideo
+KidsPlayer
 
 To get this project up and running, perform the following actions:
 

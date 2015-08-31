@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Catel.Data;
-using KidsVideo.Models;
+using KidsPlayer.Models;
 
-namespace KidsVideo.ViewModels
+namespace KidsPlayer.ViewModels
 {
     using Catel.MVVM;
     using System.Threading.Tasks;

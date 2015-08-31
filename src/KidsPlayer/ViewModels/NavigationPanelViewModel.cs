@@ -1,4 +1,4 @@
-﻿namespace KidsVideo.ViewModels
+﻿namespace KidsPlayer.ViewModels
 {
     using Catel.MVVM;
     using System.Threading.Tasks;

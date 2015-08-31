@@ -5,10 +5,10 @@ using System.Linq;
 using System.Xml.Serialization;
 using Catel.Data;
 using Catel.Services;
-using KidsVideo.Models;
-using NReco.VideoConverter;
+using KidsPlayer.Models;
 
-namespace KidsVideo.ViewModels
+
+namespace KidsPlayer.ViewModels
 {
     using Catel.MVVM;
     using System.Threading.Tasks;

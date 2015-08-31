@@ -1,4 +1,4 @@
-﻿<catel:UserControl x:Class="KidsVideo.Views.NavigationPanelView"
+﻿<catel:UserControl x:Class="KidsPlayer.Views.NavigationPanelView"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                    xmlns:catel="http://catel.codeplex.com"
@@ -28,7 +28,7 @@
                 Background="Transparent"
                 BorderBrush="{x:Null}"
                 >
-            <Image HorizontalAlignment="Left" Height="35"  VerticalAlignment="Top" Width="35" Source="/KidsVideo;component/Images/next.png"/>
+            <Image HorizontalAlignment="Left" Height="35"  VerticalAlignment="Top" Width="35" Source="/KidsPlayer;component/Images/next.png"/>
         </Button>
         <Button 
             Grid.Row="1"
@@ -44,7 +44,7 @@
                    Height="50"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   Source="/KidsVideo;component/Images/pause.png" />
+                   Source="/KidsPlayer;component/Images/pause.png" />
         </Button>
         <Button Grid.Row="1"
                 Grid.Column="1"
@@ -57,7 +57,7 @@
                 Background="Transparent"
                 BorderBrush="{x:Null}"
                 >
-            <Image HorizontalAlignment="Left" Height="60"  VerticalAlignment="Top" Width="60" Source="/KidsVideo;component/Images/eject.png"/>
+            <Image HorizontalAlignment="Left" Height="60"  VerticalAlignment="Top" Width="60" Source="/KidsPlayer;component/Images/eject.png"/>
         </Button>
         <Button Grid.Row="1"
                 Grid.Column="1"
@@ -69,7 +69,7 @@
                 Background="Transparent"
                 BorderBrush="{x:Null}">
 
-            <Image HorizontalAlignment="Left" Height="50"  VerticalAlignment="Top" Width="50" Source="/KidsVideo;component/Images/play.png"/>
+            <Image HorizontalAlignment="Left" Height="50"  VerticalAlignment="Top" Width="50" Source="/KidsPlayer;component/Images/play.png"/>
         </Button>
 
 

@@ -3,9 +3,9 @@ using System.Linq;
 using Catel.Data;
 using Catel.IoC;
 using Catel.Services;
-using KidsVideo.Models;
+using KidsPlayer.Models;
 
-namespace KidsVideo.ViewModels
+namespace KidsPlayer.ViewModels
 {
     using Catel.MVVM;
     using System.Threading.Tasks;
@@ -15,7 +15,7 @@ namespace KidsVideo.ViewModels
         private readonly ListViewModel _listScreen;
         private readonly PlayerViewModel _playerScreen;
 
-        public override string Title { get { return "KidsVideo"; } }
+        public override string Title { get { return "KidsPlayer"; } }
         
         public IViewModel CurrentScreen
         {

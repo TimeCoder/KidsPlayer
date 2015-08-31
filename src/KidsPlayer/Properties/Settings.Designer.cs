@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KidsVideo.Properties
+namespace KidsPlayer.Properties
 {
 
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KidsVideo.Models
+namespace KidsPlayer.Models
 {
     public class Movie
     {

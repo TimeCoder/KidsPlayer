@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using KidsVideo.Models;
+using KidsPlayer.Models;
 
-namespace KidsVideo.ViewModels
+namespace KidsPlayer.ViewModels
 {
     public interface IMainWindow
     {
