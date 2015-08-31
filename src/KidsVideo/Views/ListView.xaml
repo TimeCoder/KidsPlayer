@@ -1,0 +1,41 @@
+﻿<catel:UserControl x:Class="KidsVideo.Views.ListView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:catel="http://catel.codeplex.com"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   d:DesignHeight="197"
+                   d:DesignWidth="615"
+                   mc:Ignorable="d">
+
+    <catel:UserControl.Resources>
+
+        <DataTemplate x:Key="MoviesList">
+            <Border Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Height="50" Width="50" Source="/KidsVideo;component/Images/movie_stub.png"/>
+                    
+                    <TextBlock Grid.Column="1"
+                               VerticalAlignment="Center"
+                               FontSize="14"
+                               Foreground="Black"
+                               Text="{Binding Name,
+                                              Mode=OneWay}" />
+
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </catel:UserControl.Resources>
+
+    <Grid>
+        <ListView ItemsSource="{Binding Movies}" SelectedIndex="{Binding SelectedMovieIndex}" ItemTemplate="{StaticResource MoviesList}" >
+            
+        </ListView>
+    </Grid>
+
+</catel:UserControl>

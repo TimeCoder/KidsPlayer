@@ -1,0 +1,16 @@
+﻿<catel:Window x:Class="KidsVideo.Views.MainWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:catel="http://catel.codeplex.com"
+              ResizeMode="CanResize"
+              WindowState="Maximized"
+              WindowStyle="None">
+    <catel:Window.Resources>
+        <catel:ViewModelToViewConverter x:Key="ViewModelToViewConverter" />
+    </catel:Window.Resources>   
+    
+    <Grid>
+        <ContentControl Content="{Binding CurrentScreen, Converter={StaticResource ViewModelToViewConverter}}" />
+    </Grid>
+
+</catel:Window>
