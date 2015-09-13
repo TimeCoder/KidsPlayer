@@ -7,10 +7,10 @@
               WindowStyle="None">
     <catel:Window.Resources>
         <catel:ViewModelToViewConverter x:Key="ViewModelToViewConverter" />
-    </catel:Window.Resources>   
-    
+    </catel:Window.Resources>
+
     <Grid>
-        <ContentControl Margin="0" Content="{Binding CurrentScreen, Converter={StaticResource ViewModelToViewConverter}}" />
+        <ContentControl Content="{Binding CurrentScreen, Converter={StaticResource ViewModelToViewConverter}}" />
     </Grid>
 
 </catel:Window>

@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\ImageButton.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="ViewModels\IMainWindow.cs" />
     <Compile Include="ViewModels\ListViewModel.cs" />
@@ -143,6 +144,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\movie_stub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eject.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\pause.png" />
+    <Resource Include="Images\play.png" />
+    <Resource Include="Images\prev.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

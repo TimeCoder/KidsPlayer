@@ -26,12 +26,14 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Transparent"
-                BorderBrush="{x:Null}"
-                >
-            <Image HorizontalAlignment="Left" Height="35"  VerticalAlignment="Top" Width="35" Source="/KidsPlayer;component/Images/next.png"/>
+                BorderBrush="{x:Null}">
+            <Image Width="35"
+                   Height="35"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Source="/Images/next.png" />
         </Button>
-        <Button 
-            Grid.Row="1"
+        <Button Grid.Row="1"
                 Grid.Column="1"
                 Width="91"
                 Height="61"
@@ -50,14 +52,17 @@
                 Grid.Column="1"
                 Width="67"
                 Height="60"
-                Command="{Binding Eject}"
                 Margin="197,8,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Transparent"
                 BorderBrush="{x:Null}"
-                >
-            <Image HorizontalAlignment="Left" Height="60"  VerticalAlignment="Top" Width="60" Source="/KidsPlayer;component/Images/eject.png"/>
+                Command="{Binding Eject}">
+            <Image Width="60"
+                   Height="60"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Source="/KidsPlayer;component/Images/eject.png" />
         </Button>
         <Button Grid.Row="1"
                 Grid.Column="1"
@@ -65,11 +70,15 @@
                 Height="61"
                 Margin="116,0,0,0"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Top" 
+                VerticalAlignment="Top"
                 Background="Transparent"
                 BorderBrush="{x:Null}">
 
-            <Image HorizontalAlignment="Left" Height="50"  VerticalAlignment="Top" Width="50" Source="/KidsPlayer;component/Images/play.png"/>
+            <Image Width="50"
+                   Height="50"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Source="/KidsPlayer;component/Images/play.png" />
         </Button>
 
 

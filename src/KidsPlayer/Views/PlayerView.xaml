@@ -3,7 +3,6 @@
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                    xmlns:catel="http://catel.codeplex.com"
                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                   xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                    xmlns:views="clr-namespace:KidsPlayer.Views"
                    Background="Black"
@@ -11,11 +10,10 @@
                    d:DesignWidth="583"
                    mc:Ignorable="d">
 
-
     <catel:UserControl.Resources>
-        
-        <catel:BooleanToCollapsingVisibilityConverter x:Key="BooleanToCollapsingVisibilityConverter"/>
-        
+
+        <catel:BooleanToCollapsingVisibilityConverter x:Key="BooleanToCollapsingVisibilityConverter" />
+
         <Style x:Key="animateFadeOut" TargetType="{x:Type FrameworkElement}">
             <Style.Triggers>
                 <Trigger Property="Visibility" Value="Visible">
@@ -23,7 +21,7 @@
                         <BeginStoryboard Name="MyFadeEffect">
                             <Storyboard>
                                 <DoubleAnimation BeginTime="0:0:3.5"
-                                    Duration="0:0:0.5"
+                                                 Duration="0:0:0.5"
                                                  From="1.0"
                                                  Storyboard.TargetProperty="Opacity"
                                                  To="0.0" />
@@ -44,24 +42,23 @@
                       Stretch="Uniform">
             <MediaElement.Triggers>
                 <EventTrigger RoutedEvent="MediaElement.MouseMove">
-                    
-                        
-                        <BeginStoryboard Name="MyFadeEffect"  >
-                            <Storyboard TargetName="NavigationPanel">
-                                <DoubleAnimation BeginTime="0:0:3.5"
-                                    Duration="0:0:0.5" 
-                                                 From="1.0"
-                                                 
-                                                 Storyboard.TargetProperty="Opacity"
-                                                 To="0.0" />
-                            </Storyboard>
-                        </BeginStoryboard>
+
+
+                    <BeginStoryboard Name="MyFadeEffect">
+                        <Storyboard TargetName="NavigationPanel">
+                            <DoubleAnimation BeginTime="0:0:3.5"
+                                             Duration="0:0:0.5"
+                                             From="1.0"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0.0" />
+                        </Storyboard>
+                    </BeginStoryboard>
                 </EventTrigger>
-             </MediaElement.Triggers>
-            
-            
-            
-                <!--<i:EventTrigger EventName="StylusMove">
+            </MediaElement.Triggers>
+
+
+
+            <!--<i:EventTrigger EventName="StylusMove">
                     <catel:EventToCommand Command="{Binding ShowNavPanel}" />
                 </i:EventTrigger>
 
@@ -69,16 +66,18 @@
                     <catel:EventToCommand Command="{Binding NextMovie}" />
                 </i:EventTrigger>-->
 
-            
+
         </MediaElement>
 
 
-        <views:NavigationPanelView x:Name="NavigationPanel" Margin="0,0,0,30"
-                                   DataContext="{Binding NavPanel}"
+        <views:NavigationPanelView x:Name="NavigationPanel"
+                                   Margin="0,0,0,30"
                                    VerticalAlignment="Bottom"
+                                   DataContext="{Binding NavPanel}"
+                                   Opacity="{Binding NavPanelOpacity}"
                                    Style="{StaticResource animateFadeOut}"
-                                   Visibility="{Binding IsNavPanelVisible, Converter={StaticResource BooleanToCollapsingVisibilityConverter}}"
-                                   Opacity="{Binding NavPanelOpacity}" />
+                                   Visibility="{Binding IsNavPanelVisible,
+                                                        Converter={StaticResource BooleanToCollapsingVisibilityConverter}}" />
     </Grid>
 
 </catel:UserControl>
